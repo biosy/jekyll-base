@@ -1,0 +1,44 @@
+---
+layout: post
+title:  "i2c"
+date:  2018-01-02 21:59:00
+categories: jekyll update
+---
+
+# I2C ( Inter-Integrated Circuit )
+
+L'I2C est un bus série synchrone qui permet deux parties de communiquer entre-eux. L'invention émerge d'une guerre des standarts lancée par les acteurs du monde éléctronique. Il est donc inventé par philips et permet de relier un processeurs à differents élements d'un circuit. Son but essentiel est la domotique.
+#### Fonctionnement théorique
+Le but est d'avoir un seul canale de communication pour parler à plusieurs interface physique. On a donc un fonctionnement de maîtres et esclaves ou le maître est en mesure d'assurer la communication. Il n'est pas le seul à emmetre mais décide lui-même qui peut emmetre ou non. 
+#### Fonctionnement physique
+Au niveau physique, l'I2C est assez lambda avec une connectique simple.
+
+- SDA (Serial Data Line) : ligne de données bidirectionnelle
+- SCL (Serial Clock Line) : ligne d'horloge de synchronisation bidirectionnelle
+
+La première contient donc les données tandis que la seconde est une clock agissant en tant que synchronisateurs des différents maîtres/esclaves. Ainsi en fonction des états de la clock on pourra emmetre ou non
+
+#### Fonctionnement protocolaire
+On dispose de deux cas : 
+
+Maitre :arrow_right: esclaves : 
+
+- Le maître emet un start pour initier l'interaction
+- Il transmet un octet pour désigner un esclave à l'aide d'un adressage propre
+- L'esclave répond par un bit d'acquittement (ACK) ou de non acquittement (NACK)
+- L'esclave peut demander une pause
+- Emmission d'une commande par le maître
+- Le maître émait une condition de RESTART
+- Emmission de l'addresse pour désigner le même esclave
+
+Esclaves :arrow_right: Maître
+
+- Emmission d'un octet de donnée pour le maître
+- réponse du maître par un acquittement
+- Pour le dernier octet attendu par le maître, le maître répond un NACK pour mettre fin au dialogue
+- Emmission d'une condition STOP par le maître
+
+#### Utilisation de l'I2C sur linux
+Afin de vérifier la presence de l'I2C, on pourra utiliser la commande ```$dmesg```. Mais lors de la connection, on peut savoir définitement si l'I2C est accessible par l'interface utilisateur en tapant la commande : ``` ls /dev/i2c-* ```. Le but est donc d'acceder avec I2Cget et I2Cset au registre de l'esclave afin d'écrire et de lire les valeurs.
+
+#### Examples
