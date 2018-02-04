@@ -3,14 +3,12 @@ layout: page
 title: curriculum vitae
 permalink: /about1/
 ---
-# CV
-
 ### Expérience
 **Alternance chez Uptime (en cours)**
 
 *Début : 1er Octobre 2017*
 
-Ingénierie et developpement embarqué
+Ingénierie et développement embarqué
 
 **Stage chez Partnering 3.0**
 
@@ -35,13 +33,13 @@ Communication numérique, temps réel et réseau
 
 *2017*
 
-traitement d'image pour la reconnaissance de scènes
+traitement d'images pour la reconnaissance de scènes
 
 **Tracking caméra**
 
 *2016*
 
-Système de caméra pan-tilt et suivis d'objet couleurs
+Système de caméra pan-tilt et suivis d'objets couleurs
 
 **Processeur 16 bits**
 
@@ -53,18 +51,18 @@ Réalisation d'un processeur 16 bits en VHDL
 
 *2015*
 
-Génération procédurale, algorithmique et chaînes de markov.
+Génération procédurale, algorithmique et chaînes de Markov.
 
 ### Formation
 **Master 2 IISC**
 
-Système intelligent et communicant
+Master Informatique et ingénierie des systèmes complexes
 
-option STRC (système temps réel complexe)
+option STRC (Systèmes temps réel et communicants)
 
 **Licence Maths, physique, informatique**
 
-Spécialisé informatique
+Spécialité informatique
 
 **Baccalauréat scientifique**
 
@@ -81,6 +79,6 @@ Traitement d'image, machine learning, réseaux de neurones, réseau.
 Anglais
 
 - TOEIC 850
-- experience de 6 mois à l'étranger ( University of Crete )
+- expérience de 6 mois à l'étranger ( University of Crete )
 
 
