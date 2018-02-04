@@ -74,7 +74,7 @@ C, C++, python, Arduino, Matlab, VHDL, java
 ###### Os
 Ubuntu, Linux mint, raspbian, Windows
 ###### Notions
-Traitement d'image, machine learning, réseaux de neurones, réseau.
+Traitement d'images, machine learning, réseaux de neurones, réseau.
 ### Langues
 Anglais
 
