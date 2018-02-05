@@ -17,8 +17,7 @@ Le protocole d'envoi contient donc :
 
 On peut le visualiser de la sorte : 
 
-|start|d0|d1|d2|d3|d4|d5|d6|d7|parité|stop|
-
+|start|d0|d1|d2|d3|d4|d5|d6|d7|parité|stop|\n
 |-----|--|--|--|--|--|--|--|--|------|----|
 
 ## La vitesse d'envoi/récéption
